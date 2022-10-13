@@ -1,0 +1,58 @@
+﻿@{
+    ViewBag.Title = "Translator";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<div id="cardselection">
+    <input type="text" id="cardname" autocomplete="off" placeholder="Enter a card name here" />
+    <input type="button" id="random" value="Random Card" />
+    <div id="selectionstatus"></div>
+</div>
+
+<div id="setselection">
+    <br />
+    Edition: <select id="edition" name="uri"></select>
+    <br />
+    <span id="editionnote">(We always use the Oracle text. Flavor text can vary between editions.)</span>
+    <br /><br />
+    <img class="cardimg" alt="Card Image" />
+    <br /><br />
+    <label>Language Iterations:
+    <select id="iterations">
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="12" selected>12</option>
+        <option value="15">15</option>
+        <option value="20">20</option>
+        <option value="25">25</option>
+        <option value="30">30</option>
+    </select></label>
+    &nbsp;&nbsp;
+    <label>Estimated Cost: </label> $<span id="estimatedcost"></span>
+    <br/><br/>
+    <label>Google Translate API Key: <input type="text" size="100" id="apikey" value="" /></label>
+    <br/>
+    <small>
+        Don't have an API key? Sign up for a <a href="https://cloud.google.com/free/">Google Cloud free trial</a>.
+        <br/>
+        (You will need to increase the quota for Google Translate v2 characters per 100 seconds and per day.)
+    </small>
+    <br/><br/>
+    <input id="translate" type="button" value="Translate" />
+</div>
+
+<div id="load">
+    <div class="wait">
+        Please be patient as the Rosewatta Stone translator does its work. It may take several minutes.
+    </div>
+    <div id="progress">
+    </div>
+</div>
+
+<div id="present">
+    <img class="cardimg" alt="Card Image" />
+    <h3>Translations</h3>
+    <div id="results">
+    </div>
+</div>

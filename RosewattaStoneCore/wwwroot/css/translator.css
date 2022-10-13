@@ -1,0 +1,106 @@
+﻿.cardimg
+{
+    width: 300px;
+}
+
+#results {
+    clear: both;
+    margin-bottom: 20px;
+}
+
+.error
+{
+    color: red;
+    border: 1px solid red;
+    width: 300px;
+    padding: 3px;
+}
+
+.card {
+    margin-top: 5px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    clear: both;
+    float: left;
+    width: 300px;
+    padding: 3px;
+}
+
+.card.final
+{
+    border: 2px solid black;
+}
+
+.card div
+{
+    border-top: 1px dashed #DDDDDD;
+    border-bottom: 1px dashed #DDDDDD;
+}
+
+.card.intermediate {
+    clear: none;
+    border: 1px solid blue;
+}
+
+.arrowright, .arrowdown
+{
+    font-size: 12pt;
+}
+
+.arrowright
+{
+    float: left;
+    clear: none;
+}
+
+.arrowdown
+{
+    clear: both;
+}
+
+hr
+{
+    clear: both;
+}
+
+.flavor
+{
+    font-style: italic;
+}
+
+.name
+{
+    font-weight: bold;
+}
+
+#options
+{
+    margin-top: 10px;
+}
+
+.language
+{
+    text-align: center;
+}
+
+.wait
+{
+    text-align: center;
+}
+
+#selectionstatus
+{
+    margin-top: 5px;
+    color: #AAAAAA;
+    font-style: italic;
+}
+
+.wait .cardimg
+{
+    margin-top: 10px;
+}
+
+#load
+{
+    margin-bottom: 10px;
+}
